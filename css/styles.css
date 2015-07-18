@@ -6,8 +6,7 @@ body{
 #topbar{
 padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 1%;
-  padding-right: 5%;
+  padding-left: 10px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   position: fixed;
@@ -56,11 +55,12 @@ padding-top: 10px;
 }
 
 #mainpicdiv{
+	padding-top: 95px;
 	height: 400px;
 }
 
 #gafroof{
 	width: 100%;
-	top: -60%;
 	position: relative;
+	top: -95px;
 }
