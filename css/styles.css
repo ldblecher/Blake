@@ -1,6 +1,7 @@
 
-body{
-	margin: 0;
+body, html {
+  margin:0;
+  height: 100%;
 }
 
 #topbar{
@@ -55,12 +56,37 @@ padding-top: 10px;
 }
 
 #mainpicdiv{
-	padding-top: 95px;
-	height: 400px;
+	height: 100%;
+	background: 	
+		linear-gradient(
+	      rgba(0, 0, 0, 0.1), 
+	      rgba(0, 0, 0, 0.1)
+	    ),
+	    url(../images/gaf-roof-new.jpg) no-repeat center center;
+	background-size: cover;
+
 }
 
 #gafroof{
 	width: 100%;
 	position: relative;
 	top: -95px;
+}
+
+#maintext{
+	text-align: center;
+	text-shadow: 2px 2px 8px black;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	position:absolute;
+	width: 1000px;
+	margin-left: -500px;
+    top:40%;
+    left:50%;
+    font-size: 50px;
+}
+
+#phone{
+	color: #FBE536;
 }
