@@ -5,21 +5,44 @@ body, html {
 }
 
 #topbar{
-padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  position: fixed;
-  width: 100%;
-  z-index: 3;
-  background: rgba(255,255,255,0.7);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+	background: rgba(255,255,255,0.8);
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#topbar.smaller{
+	background: rgba(255,255,255,0.95);
+}
+
+#topbar.smaller #logo{
+	width: 100px;
+}
+
+#topbar.smaller #numbers{
+	padding-bottom: 10px;
+	font-size: 14px;
 }
 
 #logo{
 	display: inline-block;
 	vertical-align: middle;
 	width: 140px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #navbar{
@@ -27,9 +50,9 @@ padding-top: 10px;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
 	margin-right: 10px;
+	font-size: 18px;
 	float: right;
 }
-
 
 .line{
 	float: left;
@@ -48,10 +71,22 @@ padding-top: 10px;
 
 .list{
 	list-style-type: none;
-	font-size: 18px;
 	padding: 0; 
 	margin: 0;
 	float: right;
+}
+
+#numbers{
+	float: right;
+	font-size: 16px;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-bottom: 20px;
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #mainpicdiv{
@@ -90,10 +125,30 @@ padding-top: 10px;
 	color: #FEE736;
 }
 
-#numbers{
-	float: right;
-	font-size: 16px;
-	padding-left: 12px;
-	padding-right: 12px;
-	padding-bottom: 20px;
+#frontblurb{
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+#blurbtext{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+#serviceslist{
+	text-align: center;
+}
+
+.servicediv{
+	width: 25%;
+	display: inline-block;
+	padding: 30px;
+	vertical-align: middle;
+}
+
+.servpic{
+	width: 100%;
+	height: 100%;
 }
