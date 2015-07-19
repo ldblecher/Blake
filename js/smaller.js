@@ -1,8 +1,8 @@
 function init() {
         window.addEventListener('scroll', function(e){
             var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 300,
-                header = document.querySelector("header");
+                shrinkOn = 500,
+                header = document.querySelector("#topbar");
             if (distanceY > shrinkOn) {
                 classie.add(header,"smaller");
             } else {
@@ -12,4 +12,4 @@ function init() {
             }
         });
     }
-window.onload = init();
+    window.onload = init();
