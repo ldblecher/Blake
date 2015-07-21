@@ -221,3 +221,102 @@ body, html {
 		font-size: 28px;
 	}
 }
+
+footer{
+	width: 100%;
+	background-color: black;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+#footerlogo{
+	width: 140px;
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+#copy{
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.facebookbw {
+	display: inline-block;
+	position: relative;
+	width: 55px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+
+.facebook {
+	position: absolute;
+	width: 55px;
+}
+
+.facebookbw:hover{
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+
+.twitterbw {
+	display: inline-block;
+	position: relative;
+	width: 55px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+
+.twitter {
+	position: absolute;
+	width: 55px;
+}
+
+.twitterbw:hover{
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+
+.instabw {
+	display: inline-block;
+	position: relative;
+	width: 55px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+
+.insta{
+	position: absolute;
+	width: 55px;
+}
+
+.instabw:hover{
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all .5s;
+}
+
+table{
+	margin: 0 auto;
+}
+
+td{
+	padding-left: 7px;
+	padding-right: 7px;
+}
