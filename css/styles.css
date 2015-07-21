@@ -145,7 +145,6 @@ body, html {
 }
 
 .servicediv{
-	width: 25%;
 	display: inline-block;
 	padding: 30px;
 	vertical-align: middle;
@@ -156,10 +155,33 @@ body, html {
 	height: 100%;
 }
 
+.img{
+	width: 350px;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .apic{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	text-decoration: none;
 	color: black;
 	font-size: 35px;
+}
+
+@media screen and (max-width: 1255px){
+	.img{
+		width: 300px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 1110px){
+	.img{
+		width: 250px;
+		height: 200px;
+	}
+
 }
