@@ -426,6 +426,76 @@ td{
 	padding-right: 7px;
 }
 
+#contactus{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 40px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+#indicates{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin-bottom: 40px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.estimate{
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.inputs{
+	width: 275px;
+	height: 35px;
+	padding-left: 10px; 
+	padding-right: 10px; 
+}
+
+.contactdiv{
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.contactdiv input, textarea{
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#message{
+	width: 277px;
+	padding-left: 10px;
+	padding-right: 10px; 
+	height: 96px;
+	-webkit-appearance: textfield;
+}
+
+.contactdiv{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#submit{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	background-color: white;
+	border-style: solid;
+	box-shadow: 0px 0px 1px 0px #969898;
+	cursor: pointer;
+	border-width: 1px;
+	padding: 5px;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-size: 22px;
+}
+
 /*------SIDING PAGE------*/
 #resttopbar{
 	padding-top: 10px;

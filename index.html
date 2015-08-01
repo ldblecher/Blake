@@ -73,10 +73,22 @@
 
 	<hr width="50%">
 	<div>
-		<h1 class="blurbtext">Contact Us</h1>
-		<form>
-			<input type="text" name="name" id="name" placeholder="Name"><br>
-			<input type="text" tabindex="3" name="number" id="number" placeholder="Phone Number">
+		<h1 id="contactus">Contact Us</h1>
+		<p id="indicates">* Indicates required field</p>
+		<form class="estimate">
+			<div class="contactdiv">
+				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"><br>
+				<input type="text" name="address" class="inputs" id="address" placeholder="Address"><br>
+				<input type="text" name="city" class="inputs" id="city" placeholder="City*"><br>
+				<input type="text" name="zip" class="inputs" id="zip" placeholder="Zip Code*"><br>
+			</div>
+			<div class="contactdiv">
+				<input type="text" tabindex="3" name="number" class="inputs" id="number" placeholder="Phone Number*"><br>
+				<input type="email" name="email" class="inputs" id="email" placeholder="Email*"><br>
+				<textarea id="message" placeholder="Message*"></textarea>
+			</div><br><br>
+			<input type="submit" id="submit" name="submit">
+		</form>
 
 	<footer>
 		<img id="footerlogo" src="images/logo.png"><br>
