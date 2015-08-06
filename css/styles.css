@@ -301,6 +301,17 @@ footer{
 	text-decoration: none;
 }
 
+table{
+	margin: 0 auto;
+}
+
+td{
+	padding-left: 7px;
+	padding-right: 7px;
+	position: relative;
+}
+
+
 .facebookbw {
 	display: inline-block;
 	position: relative;
@@ -311,17 +322,18 @@ footer{
 	transition: all .5s;
 }
 
-.facebook {
-	position: absolute;
-	width: 55px;
-}
-
 .facebookbw:hover{
 	opacity: 0;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all .5s;
+}
+
+.facebook {
+	opacity: 1;
+	position: absolute;
+	width: 55px;
 }
 
 .twitterbw {
@@ -414,15 +426,6 @@ footer{
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all .5s;
-}
-
-table{
-	margin: 0 auto;
-}
-
-td{
-	padding-left: 7px;
-	padding-right: 7px;
 }
 
 #contactus{
@@ -600,7 +603,8 @@ td{
 	font-weight: 300;
 	font-size: 15px;
 	width: 187px;
-	height: 80px;
+	max-width: 187px;
+	height: 100px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	padding-left: 10px;

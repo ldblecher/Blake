@@ -17,16 +17,25 @@
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
 	min-height:20px;
+	height: 610px;
 }
+
+.rg-image-boundary{
+	text-align: center;
+}
+
 .rg-image{
 	position:relative;
 	text-align:center;
 	line-height:0px;
-
+	display: table-cell;
+	vertical-align: middle;
+	height: 600px;
+	width: 80%;
 }
 .rg-image img{
 	max-height:100%;
-	max-width:98%;
+	max-width:100%;
 }
 .rg-image-nav a{
 	position:absolute;
