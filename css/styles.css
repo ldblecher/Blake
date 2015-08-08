@@ -568,6 +568,7 @@ td{
 .descript{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
+	line-height: 32px;
 	font-size: 20px;
 	padding-left: 37px;
 	padding-right: 37px;
@@ -592,8 +593,8 @@ td{
 	font-size: 16px;
 	width: 185px;
 	height: 28px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+	margin-bottom: 8px;
+	margin-top: 8px;
 	padding-left: 10px; 
 	padding-right: 10px; 
 }
@@ -624,6 +625,10 @@ td{
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 14px;
+}
+
+#sidebyside{
+	overflow: auto;
 }
 
 /*------WINDOWS PAGE------*/
