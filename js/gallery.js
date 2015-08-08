@@ -217,8 +217,7 @@ $(function() {
 				
 				$('<img/>').load( function() {
 					
-					$rgGallery.find('div.rg-image').empty().append('<a class="fluidbox" href="' + largesrc + 
-						'"><img src="' + largesrc + '" alt="' + title + '"/></a><div class="rg-caption-wrapper"><div class="rg-caption" style="display:none;"><p>' + title + '</p></div></div>');
+					$rgGallery.find('div.rg-image').empty().append('<a href="#" data-featherlight="' + largesrc + '"><img id="picture" src="' + largesrc + '" alt="' + title + '"/></a><div class="rg-caption-wrapper"><div class="rg-caption" style="display:none;"><p>' + title + '</p></div></div>');
 
 					if( title )
 						$rgGallery.find('div.rg-caption').show().children('p');
