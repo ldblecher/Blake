@@ -57,32 +57,6 @@
 							};
 							print("</ul>");
 						?>
-						<!-- <ul>
-							<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/siding/cambriacropped.jpg" alt="image01" data-description="Before and after in Cambria Heights" /></a></li>
-							<li><a href="#"><img src="images/thumbs/ferdinandafter.jpg" data-large="images/siding/collegepointcropped.jpg" alt="image02" data-description="Before and after in College Point" /></a></li>
-							<li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/siding/elmhurstcropped.jpg" alt="image03" data-description="Before and after in East Elmhurst" /></a></li>
-							<li><a href="#"><img src="images/thumbs/4.jpg" data-large="images/siding/elmhurstbehind.jpg" alt="image04" data-description="Back of House in East Elmhurst" /></a></li>
-							<li><a href="#"><img src="images/thumbs/5.jpg" data-large="images/siding/farrockawaycropped.jpg" alt="image05" data-description="Before and after in Far Rockaway" /></a></li>
-							<li><a href="#"><img src="images/thumbs/6.jpg" data-large="images/siding/flushing1cropped.jpg" alt="image06" data-description="Before and after in Flushing" /></a></li>
-							<li><a href="#"><img src="images/thumbs/7.jpg" data-large="images/siding/flushing2cropped.jpg" alt="image07" data-description="Before and after in Flushing" /></a></li>
-							<li><a href="#"><img src="images/thumbs/8.jpg" data-large="images/siding/glenheadcropped.jpg" alt="image08" data-description="Before and after in Glen Head" /></a></li>
-							<li><a href="#"><img src="images/thumbs/9.jpg" data-large="images/siding/holliscropped.jpg" alt="image09" data-description="Before and after in Hollis" /></a></li>
-							<li><a href="#"><img src="images/thumbs/10.jpg" data-large="images/siding/nhpcropped.jpg" alt="image10" data-description="Before and after in New Hyde Park" /></a></li>
-							<li><a href="#"><img src="images/thumbs/11.jpg" data-large="images/siding/nobeforebayside.jpg" alt="image11" data-description="Siding in Bayside" /></a></li>
-							<li><a href="#"><img src="images/thumbs/12.jpg" data-large="images/siding/nobeforewhitestone.jpg" alt="image12" data-description="Siding in Whitestone" /></a></li>
-							<li><a href="#"><img src="images/thumbs/13.jpg" data-large="images/siding/nobeforewhitestone2.jpg" alt="image13" data-description="Side of house in Whitestone" /></a></li>
-							<li><a href="#"><img src="images/thumbs/14.jpg" data-large="images/siding/nobeforenhp.jpg" alt="image14" data-description="Siding in New Hyde Park" /></a></li>
-							<li><a href="#"><img src="images/thumbs/15.jpg" data-large="images/siding/nobeforerosedale.jpg" alt="image15" data-description="Siding in Rosedale" /></a></li>
-							<li><a href="#"><img src="images/thumbs/16.jpg" data-large="images/siding/nobeforehollis.jpg" alt="image16" data-description="Siding in Hollis" /></a></li>
-							<li><a href="#"><img src="images/thumbs/17.jpg" data-large="images/siding/saintalbanscropped.jpg" alt="image17" data-description="Siding in Saint Albans" /></a></li>
-							<li><a href="#"><img src="images/thumbs/18.jpg" data-large="images/siding/syossetcropped.jpg" alt="image18" data-description="Siding in Syosset" /></a></li>
-							<li><a href="#"><img src="images/thumbs/19.jpg" data-large="images/siding/sidingonlycambria.jpg" alt="image19" data-description="Siding in Cambria Heights" /></a></li>
-							<li><a href="#"><img src="images/thumbs/20.jpg" data-large="images/siding/sidingonlyhollis.jpg" alt="image20" data-description="Siding in Hollis" /></a></li>
-							<li><a href="#"><img src="images/thumbs/21.jpg" data-large="images/siding/sidingonlylakesuccess.jpg" alt="image21" data-description="Siding in Lake Success" /></a></li>
-							<li><a href="#"><img src="images/thumbs/22.jpg" data-large="images/siding/sidingonlylakesuccess2.jpg" alt="image22" data-description="Siding on Back of House in Lake Success" /></a></li>
-							<li><a href="#"><img src="images/thumbs/23.jpg" data-large="images/siding/sidingonlywindowheaders.jpg" alt="image23" data-description="Siding and Window Headers" /></a></li>
-							<li><a href="#"><img src="images/thumbs/24.jpg" data-large="images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
-						</ul> -->
 					</div>
 				</div>
 				<!-- End Elastislide Carousel Thumbnail Viewer -->
