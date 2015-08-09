@@ -645,4 +645,18 @@ td{
 	background-position: 50% 40%;
 }
 
+/*------ROOFING PAGE------*/
+
+#mainroofingpic{
+	height: 50%;
+	background: 	
+		linear-gradient(
+	      rgba(0, 0, 0, 0.1), 
+	      rgba(0, 0, 0, 0.1)
+	    ),
+	    url(../images/roofmain.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 25%;
+}
+
 
