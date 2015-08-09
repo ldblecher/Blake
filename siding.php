@@ -3,7 +3,6 @@
 
 <?php include 'headerpages.php' ?>
 
-
 	<div id="mainsidingpic">
 		<!-- <img id="gafroof" src="images/gaf-roof-new.jpg"> -->
 		<h1 id="restmaintext">SIDING</h1>
@@ -31,6 +30,7 @@
 				</form>
 			</div>
 		</div>
+
 		<div id="rg-gallery" class="rg-gallery">
 			<div class="rg-thumbs">
 				<!-- Elastislide Carousel Thumbnail Viewer -->
@@ -40,7 +40,24 @@
 						<span class="es-nav-next">Next</span>
 					</div>
 					<div class="es-carousel">
-						<ul>
+						<?php
+							require_once 'config.php';
+							$mysqli = new mysqli( DB_HOST, DB_USER, DB_PASSWORD, DB_NAME );
+							//Get all photos
+							$result = $mysqli->query("SELECT * FROM sidingpics");
+							print("<ul>");
+							while($row = $result->fetch_assoc()){
+								$description = $row['description'];
+								$thumbnail = $row['thumbnail'];
+								$url = $row['url'];
+
+								print("<li><a href='#'>");
+								print("<img src='images/thumbs/$thumbnail' data-large='images/siding/$url' alt='$description' data-description='$description'/>");
+								print("</a></li>");
+							};
+							print("</ul>");
+						?>
+						<!-- <ul>
 							<li><a href="#"><img src="images/thumbs/1.jpg" data-large="images/siding/cambriacropped.jpg" alt="image01" data-description="Before and after in Cambria Heights" /></a></li>
 							<li><a href="#"><img src="images/thumbs/ferdinandafter.jpg" data-large="images/siding/collegepointcropped.jpg" alt="image02" data-description="Before and after in College Point" /></a></li>
 							<li><a href="#"><img src="images/thumbs/3.jpg" data-large="images/siding/elmhurstcropped.jpg" alt="image03" data-description="Before and after in East Elmhurst" /></a></li>
@@ -64,8 +81,8 @@
 							<li><a href="#"><img src="images/thumbs/21.jpg" data-large="images/siding/sidingonlylakesuccess.jpg" alt="image21" data-description="Siding in Lake Success" /></a></li>
 							<li><a href="#"><img src="images/thumbs/22.jpg" data-large="images/siding/sidingonlylakesuccess2.jpg" alt="image22" data-description="Siding on Back of House in Lake Success" /></a></li>
 							<li><a href="#"><img src="images/thumbs/23.jpg" data-large="images/siding/sidingonlywindowheaders.jpg" alt="image23" data-description="Siding and Window Headers" /></a></li>
-							<!-- <li><a href="#"><img src="images/thumbs/24.jpg" data-large="images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li> -->
-						</ul>
+							<li><a href="#"><img src="images/thumbs/24.jpg" data-large="images/24.jpg" alt="image24" data-description="As they did battery to the spheres intend" /></a></li>
+						</ul> -->
 					</div>
 				</div>
 				<!-- End Elastislide Carousel Thumbnail Viewer -->
