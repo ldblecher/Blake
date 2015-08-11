@@ -52,7 +52,7 @@
 								$url = $row['url'];
 
 								print("<li><a href='#'>");
-								print("<img src='images/thumbs/$thumbnail' data-large='images/siding/$url' alt='$description' data-description='$description'/>");
+								print("<img src='images/thumbs/siding/$thumbnail' data-large='images/siding/$url' alt='$description' data-description='$description'/>");
 								print("</a></li>");
 							};
 							print("</ul>");
@@ -63,16 +63,8 @@
 			</div><!-- rg-thumbs -->
 		</div><!-- rg-gallery -->
 	</div>
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" src="js/jquery.elastislide.js"></script>
-	<script type="text/javascript" src="js/gallery.js"></script>
-	<script type="text/javascript" src="js/featherlight.min.js"></script>
-	<script src="js/jquery.maskedinput.js"></script>
-	<script src="js/script.js"></script>
 
 
-</body>
+	<?php include 'footer.php' ?>
 
 </html>

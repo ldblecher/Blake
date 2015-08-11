@@ -496,6 +496,16 @@ td{
 	padding-left: 8px;
 	padding-right: 8px;
 	font-size: 22px;
+	-webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#submit:hover{
+	background-color: #D8D9D9;
+
 }
 
 /*------SIDING PAGE------*/
