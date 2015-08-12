@@ -139,6 +139,7 @@ body, html {
 
 #mainpicdiv{
 	height: 100%;
+	min-height: 300px;
 	background: 	
 		linear-gradient(
 	      rgba(0, 0, 0, 0.1), 
@@ -155,6 +156,17 @@ body, html {
 	top: -95px;
 }
 
+#maininner{
+	max-width: 1651px;
+}
+
+#proudly{
+	font-style: italic;
+	font-family: 'Lato', sans-serif;
+	font-size: 32px;
+	text-align: center;
+}
+
 #maintext{
 	text-align: center;
 	text-shadow: 2px 2px 8px black;
@@ -164,9 +176,14 @@ body, html {
 	position:absolute;
 	width: 100%;
 	margin-left: -50%;
-    top:40%;
+    top:45%;
     left:50%;
     font-size: 50px;
+    -webkit-transform:translateY(-45%);
+    -moz-transform:translateY(-45%);
+    -ms-transform:translateY(-45%);
+    -o-transform:translateY(-45%);
+    transform:translateY(-45%);
 }
 
 #phone{
@@ -174,8 +191,10 @@ body, html {
 }
 
 #frontblurb{
-	margin-left: 50px;
-	margin-right: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
 }
 
 .blurbtext{
@@ -565,9 +584,14 @@ td{
 	position:absolute;
 	width: 100%;
 	margin-left: -50%;
-    top:20%;
+    top:22%;
     left:50%;
     font-size: 50px;
+    -webkit-transform:translateY(-20%);
+    -moz-transform:translateY(-20%);
+    -ms-transform:translateY(-20%);
+    -o-transform:translateY(-20%);
+    transform:translateY(-20%);
 }
 
 .innercontent{
@@ -646,6 +670,7 @@ td{
 
 #sidebyside{
 	overflow: auto;
+	margin-bottom: 40px;
 }
 
 /*------WINDOWS PAGE------*/

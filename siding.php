@@ -15,20 +15,9 @@
 				Your home is usually your largest asset. In terms of adding resale value to your home, vinyl siding is one of the the best investments you can make. Vinyl siding consistently ranks among the highest return on investments for remodeling projects.
 				<br><br>You have a wide variety of choices for styles and beautiful colors of vinyl siding or vinyl shakes for your home. In addition, there is a beautiful palette of colors so you can color coordinate the siding, soffit and fascia, window trim, door trim and gutters and leaders.</p>
 			</div>
-			<div class="rightside">
-				<p id="righttitle">Request a Free Estimate!</p>
-				<form class="sideform">
-						<input type="text" name="name" class="sideput" id="name" placeholder="Name*"><br>
-						<input type="text" name="address" class="sideput" id="address" placeholder="Address"><br>
-						<input type="text" name="city" class="sideput" id="city" placeholder="City*"><br>
-						<input type="text" name="zip" class="sideput" id="zip" placeholder="Zip Code*"><br>
-						<input type="text" tabindex="3" name="number" class="sideput" id="number" placeholder="Phone Number*"><br>
-						<input type="email" name="email" class="sideput" id="email" placeholder="Email*"><br>
-						<textarea id="sidemessage" placeholder="Message*"></textarea>
-					<br><br>
-					<input type="submit" id="sidesub" name="submit">
-				</form>
-			</div>
+			
+			<?php include 'sidecontactform.php' ?>
+			
 		</div>
 
 		<div id="rg-gallery" class="rg-gallery">
