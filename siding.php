@@ -3,7 +3,7 @@
 
 <?php include 'headerpages.php' ?>
 
-	<div id="mainsidingpic">
+	<div class="mainpics" id="mainsidingpic">
 		<!-- <img id="gafroof" src="images/gaf-roof-new.jpg"> -->
 		<h1 id="restmaintext">SIDING</h1>
 	</div>

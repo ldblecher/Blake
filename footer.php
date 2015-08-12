@@ -3,26 +3,26 @@
 		<table>
 			<tr>
 				<td>
-					<a href="#">
+					<a target="_blank" href="https://www.facebook.com/pages/Blake-Windows-Siding-Roofing/1480600345558549?ref=br_tf">
 					<img class="facebook" src="images/facebookcolor.png">
 					<img class="facebookbw" src="images/facebookbw.png">
 					</a>
 				</td>
 				<td>
-					<a href="#">
+					<a target="_blank" href="https://plus.google.com/b/107674125604655553566/107674125604655553566/about">
 					<img class="google" src="images/googlewhite.png">
 					<img class="googlebw" src="images/googlebw.png">
 					</a>
 				</td>
 				<td>
-					<a href="#">
+					<a target="_blank" href="#">
 					<img class="insta" src="images/instacolor.png">
 					<img class="instabw" src="images/instabw.png">
 					</a>
 				</td>
 
 				<td>
-					<a href="#">
+					<a target="_blank" href="http://www.yelp.com/biz/blake-windows-siding-and-roofing-new-hyde-park">
 					<img class="yelp" src="images/yelpwhite.png">
 					<img class="yelpbw" src="images/yelpbw.png">
 					</a>

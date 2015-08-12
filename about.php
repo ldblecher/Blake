@@ -3,18 +3,19 @@
 
 <?php include 'headerpages.php' ?>
 
-	<div class="mainpics" id="mainwindowspic">
+	<div class="mainpics" id="mainroofingpic">
 		<!-- <img id="gafroof" src="images/gaf-roof-new.jpg"> -->
-		<h1 id="restmaintext">WINDOWS</h1>
+		<h1 id="restmaintext">ABOUT</h1>
 	</div>
-
 	<div class="innercontent">
 		<div id="sidebyside">
-			<div class="leftside">
-				<p class="descript">Now more than ever, energy conservation is a top priority for homeowners when choosing windows for their home.
-				<br><br>
-				For many homeowners, purchasing replacement windows in Queens & Nassau County is a substantial investment. The new windows not only must enhance the appearance of your home inside and out, but also increase energy savings year-round.
-				<br><br>Reducing energy loss is often the number one reason for purchasing new windows. Windows are roughly 80% glass so it is important to choose the ideal glass system for your home and climate. Upgrading to a high performance insulated glass system with Low-E glass will help further increase year-round energy savings.</p>
+			<div class="leftblake">
+				<img id="blakepic" src="images/arnieblake.jpg">
+				<p id="owner">Arnie Blake, Owner and President</p>
+				<p id="aboutdesc" class="descript">We offer peace of mind when you install your roof. As a GAF Master Elite Ceritified Residential Roofing Contractor (since 2001) we use top quality roofing materials, give you a professional roof installation and give you the best transferrable warranties.
+				<br><br>Your roof can represent up to 40% of your home's curb appeal.
+				<br><br>Choosing the style and color of your roof will greatly enhance the look of your home. GAF Architectural Timberline Roofing Shingles and GAF Architectural Designer Roofing Shingles offer a large variety of colors to choose from.
+				</p>
 			</div>
 			<div class="rightside">
 				<p id="righttitle">Request a Free Estimate!</p>
@@ -33,8 +34,6 @@
 		</div>
 	</div>
 
-</body>
-
-<?php include 'footer.php' ?>
+	<?php include 'footer.php' ?>
 
 </html>
