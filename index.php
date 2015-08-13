@@ -7,8 +7,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/classie.js"></script>
 	<script src="js/smaller.js"></script>
+	<script src="ajax.js"></script>
 </head>
 
 <body>
@@ -77,27 +79,23 @@
 		<h1 id="contactus">Contact Us</h1>
 		<p id="indicates">* Indicates required field</p>
 
-		<?php
-			$name = $_POST['name'];
-			$address = $_POST['address'];
-			$city = $_POST['city'];
-			$zip = $_POST['zip'];
-			$phone = $_POST['number'];
-			$email = $_POST['email'];
-			$message = $_POST['message'];
-		?>
-
 		<form class="estimate" action="" method="post">
 			<div class="contactdiv">
 				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"maxlength="100"><br>
+				<div id="name-msg"></div>
 				<input type="text" name="address" class="inputs" id="address" placeholder="Address" maxlength="120"><br>
 				<input type="text" name="city" class="inputs" id="city" placeholder="City*" maxlength="100"><br>
+				<div id="city-msg"></div>
 				<input type="text" name="zip" class="inputs" id="zip" placeholder="Zip Code*" maxlength="5"><br>
+				<div id="zip-msg"></div>
 			</div>
 			<div class="contactdiv">
 				<input type="text" tabindex="3" name="number" class="inputs" id="number" placeholder="Phone Number*" maxlength="10"><br>
+				<div id="phone-msg"></div>
 				<input type="email" name="email" class="inputs" id="email" placeholder="Email*" maxlength="100"><br>
+				<div id="email-msg"></div>
 				<textarea id="message" placeholder="Message*" maxlength="250"></textarea>
+				<div id="message-msg"></div>
 			</div><br><br>
 			<input type="submit" id="submit" name="submit" disabled>
 		</form>
@@ -147,7 +145,6 @@
 		<p id="copy">Copyright &copy; 2015 Blake Windows, Siding, and Roofing</p>
 	</footer>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
 	<script src="js/script.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>

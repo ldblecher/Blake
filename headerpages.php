@@ -43,8 +43,8 @@
 						<li class="subdrop"><a class="shadow" href="soffit.php">SOFFIT &amp; FASCIA</a></li>
 						<li class="subdrop"><a class="shadow" href="awnings.php">AWNINGS</a></li>
 						<li class="subdrop"><a class="shadow" href="doors.php">DOORS</a></li>
-						<li class="subdrop" id="bottom"><a class="shadow" href="remodeling.php">REMODELING</a></li>
-						<li class="subdrop"><a class="shadow" href="light.php">LIGHT CONSTRUCTION</a></li>
+						<li class="subdrop"><a class="shadow" href="remodeling.php">REMODELING</a></li>
+						<li class="subdrop" id="bottom"><a class="shadow" href="light.php">LIGHT CONSTRUCTION</a></li>
 					</ul>
 				</li>
 				<li class="line"><a class="shadow" href="testimonials.php">TESTIMONIALS</a></li>

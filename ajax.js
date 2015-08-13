@@ -3,6 +3,7 @@ var requestCity;
 var requestZip;
 var requestPhone;
 var requestEmail;
+var requestSubmit;
 
 $(document).ready(function() {
 
@@ -13,7 +14,7 @@ $(document).ready(function() {
 
 		var name = $("#name").val();
 
-		var nameInfo = {requestType: 'NameCheck'. name: name};
+		var nameInfo = {requestType: 'NameCheck', name: name};
 
 		requestName =  $.ajax({
 			url: 'ajax.php',
@@ -25,8 +26,10 @@ $(document).ready(function() {
 			}
 		});
 
-		requestName.success( function(data){ 
+		requestName.success( function(data){
+			console.log(data);
 			if (data === 'NameProblem'){
+				console.log("hello");
 				$("#name-msg").text("Please enter a valid name");
 			}
 		});
@@ -39,12 +42,12 @@ $(document).ready(function() {
 
 		var city = $("#city").val();
 
-		var cityInfo = {requestType: 'CityCheck'. city: city};
+		var cityInfo = {requestType: 'CityCheck', city: city};
 
 		requestCity =  $.ajax({
 			url: 'ajax.php',
 			method: 'POST',
-			data: CityInfo,
+			data: cityInfo,
 			dataType: 'text',
 			error: function(error) {
 				console.log(error);
@@ -65,12 +68,12 @@ $(document).ready(function() {
 
 		var zip = $("#zip").val();
 
-		var zipInfo = {requestType: 'ZipCheck'. zip: zip};
+		var zipInfo = {requestType: 'ZipCheck', zip: zip};
 
 		requestZip =  $.ajax({
 			url: 'ajax.php',
 			method: 'POST',
-			data: ZipInfo,
+			data: zipInfo,
 			dataType: 'text',
 			error: function(error) {
 				console.log(error);
@@ -91,12 +94,12 @@ $(document).ready(function() {
 
 		var phone = $("#number").val();
 
-		var phoneInfo = {requestType: 'PhoneCheck'. phone: phone};
+		var phoneInfo = {requestType: 'PhoneCheck', phone: phone};
 
 		requestPhone =  $.ajax({
 			url: 'ajax.php',
 			method: 'POST',
-			data: PhoneInfo,
+			data: phoneInfo,
 			dataType: 'text',
 			error: function(error) {
 				console.log(error);
@@ -117,12 +120,12 @@ $(document).ready(function() {
 
 		var email = $("#email").val();
 
-		var emailInfo = {requestType: 'EmailCheck'. email: email};
+		var emailInfo = {requestType: 'EmailCheck', email: email};
 
 		requestEmail =  $.ajax({
 			url: 'ajax.php',
 			method: 'POST',
-			data: EmailInfo,
+			data: emailInfo,
 			dataType: 'text',
 			error: function(error) {
 				console.log(error);
@@ -136,30 +139,49 @@ $(document).ready(function() {
 		});
 	});
 
-	$(document).on("keyup", "#email", function(){
-		if (typeof requestEmail !== 'undefined') {
-			requestEmail.abort();
-		}
+	$(document).on("keyup", "#message", function(){
 
-		var email = $("#email").val();
-
-		var emailInfo = {requestType: 'EmailCheck'. email: email};
-
-		requestEmail =  $.ajax({
-			url: 'ajax.php',
-			method: 'POST',
-			data: EmailInfo,
-			dataType: 'text',
-			error: function(error) {
-				console.log(error);
-			}
-		});
+		var message = $("#message").val();
 
 		requestEmail.success( function(data){ 
-			if (data === 'EmailProblem'){
-				$("#email-msg").text("Please enter a valid email address");
+			if (message != ""){
+				$("#message-msg").text("Please enter a message");
 			}
 		});
+	});
+
+	$(document).on("keyup", "#name, #address, #city. #zip. #number, #email, #message, #submit", function(){
+		var name = $("#name").val();
+		var address = $("#address").val();
+		var city = $("#city").val();
+		var zip = $("#zip").val();
+		var phone = $("#number").val();
+		var email = $("#email").val();
+		var message = $("#message").val();
+
+		if(name && city && zip && number && email && message){
+
+			var contactInfo = {requestType: "SubmitCheck", name: name, address: address, city: city, zip: zip, number: number, email: email, message: message};
+
+			request = $.ajax({
+				url: 'ajax.php',
+				method: 'POST',
+				data: contactInfo,
+				dataType: 'text',
+				error: function(error) {
+					console.log(error);
+				}
+			});
+
+			requestSubmit.success( function(data){ 
+				if (data === 'Problem'){
+					$("#submit").attr("disabled", "disabled");
+				}
+				if (data === 'NoProblem'){
+					$("#submit").removeAttr("disabled");
+				}
+			});
+		}
 	});
 
 
@@ -211,4 +233,4 @@ $(document).ready(function() {
 	// 	}
 
 	// }
-}
+// }
