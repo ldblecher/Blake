@@ -37,14 +37,18 @@
 				<li class="line"><a class="shadow" href="roofing.php">ROOFING</a></li>
 				<li class="line"><a class="shadow" href="siding.php">SIDING</a></li>
 				<li class="line"><a class="shadow" href="windows.php">WINDOWS</a></li>
-				<li class="line"><a class="shadow" href="contact.php">GUTTERS</a></li>
-				<li class="line" id="dropdown"><a class="shadow" href="contact.php">OTHER SERVICES</a>
-					<ul id="subul">
-						<li class="subdrop" id="first">Test</li>
-						<li class="subdrop">Test</li>
-						<li class="subdrop">Test</li>
+				<li class="line"><a class="shadow" href="gutters.php">GUTTERS</a></li>
+				<li class="line" id="dropdown">OTHER SERVICES
+					<ul class="smaller" id="subul">
+						<li class="subdrop"><a class="shadow" href="soffit.php">SOFFIT &amp; FASCIA</a></li>
+						<li class="subdrop"><a class="shadow" href="awnings.php">AWNINGS</a></li>
+						<li class="subdrop"><a class="shadow" href="doors.php">DOORS</a></li>
+						<li class="subdrop" id="bottom"><a class="shadow" href="remodeling.php">REMODELING</a></li>
+						<li class="subdrop"><a class="shadow" href="light.php">LIGHT CONSTRUCTION</a></li>
 					</ul>
 				</li>
+				<li class="line"><a class="shadow" href="testimonials.php">TESTIMONIALS</a></li>
+				<li class="line"><a class="shadow" href="contact.php">CONTACT</a></li>
 			</ul>
 		</div><br>
 	</div>

@@ -21,14 +21,18 @@
 				<li class="line"><a class="shadow" href="roofing.php">ROOFING</a></li>
 				<li class="line"><a class="shadow" href="siding.php">SIDING</a></li>
 				<li class="line"><a class="shadow" href="windows.php">WINDOWS</a></li>
-				<li class="line"><a class="shadow" href="contact.php">GUTTERS</a></li>
-				<li class="line" id="dropdown" ><a class="shadow" href="contact.php">OTHER SERVICES</a>
+				<li class="line"><a class="shadow" href="gutters.php">GUTTERS</a></li>
+				<li class="line" id="dropdown" >OTHER SERVICES
 					<ul id="subul">
-						<li class="subdrop">REMODELING</li>
-						<li class="subdrop">SOFFIT & FASCIA</li>
-						<li class="subdrop">Test</li>
+						<li class="subdrop"><a class="shadow" href="soffit.php">SOFFIT &amp; FASCIA</a></li>
+						<li class="subdrop"><a class="shadow" href="awnings.php">AWNINGS</a></li>
+						<li class="subdrop"><a class="shadow" href="doors.php">DOORS</a></li>
+						<li class="subdrop" id="bottom"><a class="shadow" href="remodeling.php">REMODELING</a></li>
+						<li class="subdrop"><a class="shadow" href="light.php">LIGHT CONSTRUCTION</a></li>
 					</ul>
 				</li>
+				<li class="line"><a class="shadow" href="testimonials.php">TESTIMONIALS</a></li>
+				<li class="line"><a class="shadow" href="contact.php">CONTACT</a></li>
 			</ul>
 		</div><br>
 	</div>
@@ -72,19 +76,30 @@
 		<hr width="50%">
 		<h1 id="contactus">Contact Us</h1>
 		<p id="indicates">* Indicates required field</p>
-		<form class="estimate">
+
+		<?php
+			$name = $_POST['name'];
+			$address = $_POST['address'];
+			$city = $_POST['city'];
+			$zip = $_POST['zip'];
+			$phone = $_POST['number'];
+			$email = $_POST['email'];
+			$message = $_POST['message'];
+		?>
+
+		<form class="estimate" action="" method="post">
 			<div class="contactdiv">
-				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"><br>
-				<input type="text" name="address" class="inputs" id="address" placeholder="Address"><br>
-				<input type="text" name="city" class="inputs" id="city" placeholder="City*"><br>
-				<input type="text" name="zip" class="inputs" id="zip" placeholder="Zip Code*"><br>
+				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"maxlength="100"><br>
+				<input type="text" name="address" class="inputs" id="address" placeholder="Address" maxlength="120"><br>
+				<input type="text" name="city" class="inputs" id="city" placeholder="City*" maxlength="100"><br>
+				<input type="text" name="zip" class="inputs" id="zip" placeholder="Zip Code*" maxlength="5"><br>
 			</div>
 			<div class="contactdiv">
-				<input type="text" tabindex="3" name="number" class="inputs" id="number" placeholder="Phone Number*"><br>
-				<input type="email" name="email" class="inputs" id="email" placeholder="Email*"><br>
-				<textarea id="message" placeholder="Message*"></textarea>
+				<input type="text" tabindex="3" name="number" class="inputs" id="number" placeholder="Phone Number*" maxlength="10"><br>
+				<input type="email" name="email" class="inputs" id="email" placeholder="Email*" maxlength="100"><br>
+				<textarea id="message" placeholder="Message*" maxlength="250"></textarea>
 			</div><br><br>
-			<input type="submit" id="submit" name="submit">
+			<input type="submit" id="submit" name="submit" disabled>
 		</form>
 	</div>
 	<footer>

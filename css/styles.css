@@ -73,8 +73,8 @@ body, html {
 	padding: 0;
 	position: absolute;
 	top: 22px;
-	left: 8px;
-	width: 152px;
+	left: -30px;
+	width: 228px;
 	padding-top: 14px;
 	-webkit-box-shadow: none;
 	-moz-box-shadow: none;
@@ -89,12 +89,21 @@ body, html {
 	transition: all .3s;
 }
 
+#bottom{
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
 #subul.smaller{
 	padding-top: 10px;
 }
 
 #subul.smaller .subdrop{
 	background: rgba(255,255,255,0.95);
+}
+
+#dropdown{
+	cursor: pointer;
 }
 
 #dropdown:hover #subul{
@@ -158,6 +167,8 @@ body, html {
 
 #maininner{
 	max-width: 1651px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #proudly{
@@ -528,7 +539,10 @@ td{
 
 #submit:hover{
 	background-color: #D8D9D9;
+}
 
+#submit:disabled{
+	opacity: .5;
 }
 
 /*------SIDING PAGE------*/
@@ -587,11 +601,11 @@ td{
     top:22%;
     left:50%;
     font-size: 50px;
-    -webkit-transform:translateY(-20%);
-    -moz-transform:translateY(-20%);
-    -ms-transform:translateY(-20%);
-    -o-transform:translateY(-20%);
-    transform:translateY(-20%);
+    -webkit-transform:translateY(-22%);
+    -moz-transform:translateY(-22%);
+    -ms-transform:translateY(-22%);
+    -o-transform:translateY(-22%);
+    transform:translateY(-22%);
 }
 
 .innercontent{
