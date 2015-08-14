@@ -82,20 +82,20 @@
 		<form class="estimate" action="" method="post">
 			<div class="contactdiv">
 				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"maxlength="100"><br>
-				<div id="name-msg"></div>
+				<div id="name-msg" class="error"></div>
 				<input type="text" name="address" class="inputs" id="address" placeholder="Address" maxlength="120"><br>
 				<input type="text" name="city" class="inputs" id="city" placeholder="City*" maxlength="100"><br>
-				<div id="city-msg"></div>
+				<div id="city-msg" class="error"></div>
 				<input type="text" name="zip" class="inputs" id="zip" placeholder="Zip Code*" maxlength="5"><br>
-				<div id="zip-msg"></div>
+				<div id="zip-msg" class="error"></div>
 			</div>
 			<div class="contactdiv">
 				<input type="text" tabindex="3" name="number" class="inputs" id="number" placeholder="Phone Number*" maxlength="10"><br>
-				<div id="phone-msg"></div>
+				<div id="phone-msg" class="error"></div>
 				<input type="email" name="email" class="inputs" id="email" placeholder="Email*" maxlength="100"><br>
-				<div id="email-msg"></div>
+				<div id="email-msg" class="error"></div>
 				<textarea id="message" placeholder="Message*" maxlength="250"></textarea>
-				<div id="message-msg"></div>
+				<div id="message-msg" class="error"></div>
 			</div><br><br>
 			<input type="submit" id="submit" name="submit" disabled>
 		</form>

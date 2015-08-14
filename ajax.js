@@ -7,7 +7,7 @@ var requestSubmit;
 
 $(document).ready(function() {
 
-	$(document).on("keyup", "#name", function(){
+	$(document).on("focusout", "#name", function(){
 		if (typeof requestName !== 'undefined') {
 			requestName.abort();
 		}
@@ -18,7 +18,7 @@ $(document).ready(function() {
 
 		requestName =  $.ajax({
 			url: 'ajax.php',
-			method: 'POST',
+			method: 'GET',
 			data: nameInfo,
 			dataType: 'text',
 			error: function(error) {
@@ -27,15 +27,16 @@ $(document).ready(function() {
 		});
 
 		requestName.success( function(data){
-			console.log(data);
 			if (data === 'NameProblem'){
-				console.log("hello");
 				$("#name-msg").text("Please enter a valid name");
+			}
+			else{
+				$("#name-msg").text("");
 			}
 		});
 	});
 
-	$(document).on("keyup", "#city", function(){
+	$(document).on("focusout", "#city", function(){
 		if (typeof requestCity !== 'undefined') {
 			requestCity.abort();
 		}
@@ -46,7 +47,7 @@ $(document).ready(function() {
 
 		requestCity =  $.ajax({
 			url: 'ajax.php',
-			method: 'POST',
+			method: 'GET',
 			data: cityInfo,
 			dataType: 'text',
 			error: function(error) {
@@ -58,10 +59,13 @@ $(document).ready(function() {
 			if (data === 'CityProblem'){
 				$("#city-msg").text("Please enter a valid city");
 			}
+			else{
+				$("#city-msg").text("");
+			}
 		});
 	});
 
-	$(document).on("keyup", "#zip", function(){
+	$(document).on("focusout", "#zip", function(){
 		if (typeof requestZip !== 'undefined') {
 			requestZip.abort();
 		}
@@ -72,7 +76,7 @@ $(document).ready(function() {
 
 		requestZip =  $.ajax({
 			url: 'ajax.php',
-			method: 'POST',
+			method: 'GET',
 			data: zipInfo,
 			dataType: 'text',
 			error: function(error) {
@@ -84,21 +88,25 @@ $(document).ready(function() {
 			if (data === 'ZipProblem'){
 				$("#zip-msg").text("Please enter a valid 5 digit zip code");
 			}
+			else{
+				$("#zip-msg").text("");
+			}
 		});
 	});
 
-	$(document).on("keyup", "#number", function(){
+	$(document).on("focusout", "#number", function(){
 		if (typeof requestPhone !== 'undefined') {
 			requestPhone.abort();
 		}
 
 		var phone = $("#number").val();
+		console.log(phone);
 
 		var phoneInfo = {requestType: 'PhoneCheck', phone: phone};
 
 		requestPhone =  $.ajax({
 			url: 'ajax.php',
-			method: 'POST',
+			method: 'GET',
 			data: phoneInfo,
 			dataType: 'text',
 			error: function(error) {
@@ -110,10 +118,13 @@ $(document).ready(function() {
 			if (data === 'PhoneProblem'){
 				$("#phone-msg").text("Please enter a valid 10 digit phone number");
 			}
+			else{
+				$("#phone-msg").text("");
+			}
 		});
 	});
 
-	$(document).on("keyup", "#email", function(){
+	$(document).on("focusout", "#email", function(){
 		if (typeof requestEmail !== 'undefined') {
 			requestEmail.abort();
 		}
@@ -124,7 +135,7 @@ $(document).ready(function() {
 
 		requestEmail =  $.ajax({
 			url: 'ajax.php',
-			method: 'POST',
+			method: 'GET',
 			data: emailInfo,
 			dataType: 'text',
 			error: function(error) {
@@ -136,16 +147,22 @@ $(document).ready(function() {
 			if (data === 'EmailProblem'){
 				$("#email-msg").text("Please enter a valid email address");
 			}
+			else{
+				$("#email-msg").text("");
+			}
 		});
 	});
 
-	$(document).on("keyup", "#message", function(){
+	$(document).on("focusout", "#message", function(){
 
 		var message = $("#message").val();
 
 		requestEmail.success( function(data){ 
-			if (message != ""){
+			if (message == ""){
 				$("#message-msg").text("Please enter a message");
+			}
+			else{
+				$("#message-msg").text("");
 			}
 		});
 	});
@@ -165,7 +182,7 @@ $(document).ready(function() {
 
 			request = $.ajax({
 				url: 'ajax.php',
-				method: 'POST',
+				method: 'GET',
 				data: contactInfo,
 				dataType: 'text',
 				error: function(error) {
@@ -213,7 +230,7 @@ $(document).ready(function() {
 
 	// 		request = $.ajax({
 	// 			url: 'ajax.php',
-	// 			method: 'POST',
+	// 			method: 'GET',
 	// 			data: contactInfo,
 	// 			dataType: 'text',
 	// 			error: function(error) {

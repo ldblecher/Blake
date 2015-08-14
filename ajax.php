@@ -1,15 +1,13 @@
 <?php
-	$request_type2 = $_POST['requestType'];
-	$request_type = filter_input(INPUT_POST, "requestType", FILTER_SANITIZE_STRING);
+	$request_type = filter_input(INPUT_GET, "requestType", FILTER_SANITIZE_STRING);
 	if ( empty( $request_type ) ) {
-		echo $request_type2;
 		echo 'Missing requestType.';
 		die();
 	}
 
 	switch ( $request_type ) {
 		case "NameCheck":
-			$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
+			$name = filter_input(INPUT_GET, "name", FILTER_SANITIZE_STRING);
 			if ( empty($name) || ! (preg_match("/^[A-z\s]+$/", $name))){
 				echo 'NameProblem';
 			}
@@ -21,7 +19,7 @@
 
 
 		case "CityCheck":
-			$city = filter_input(INPUT_POST, "city", FILTER_SANITIZE_STRING);
+			$city = filter_input(INPUT_GET, "city", FILTER_SANITIZE_STRING);
 			if ( empty($city) || ! (preg_match("/^[A-z\s]+$/", $city))){
 				echo 'CityProblem';
 			}
@@ -32,7 +30,7 @@
 			break;
 
 		case "ZipCheck":
-			$zip = filter_input(INPUT_POST, "zip", FILTER_SANITIZE_STRING);
+			$zip = filter_input(INPUT_GET, "zip", FILTER_SANITIZE_STRING);
 			if ( empty($zip) || ! (preg_match("/^[0-9]{5}$/", $zip))){
 				echo 'ZipProblem';
 			}
@@ -43,7 +41,7 @@
 			break;
 
 		case "PhoneCheck":
-			$phone = filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING);
+			$phone = filter_input(INPUT_GET, "phone", FILTER_SANITIZE_STRING);
 			if ( empty($phone) || ! (preg_match("/^[0-9]{10}$/", $phone))){
 				echo 'PhoneProblem';
 			}
@@ -54,7 +52,7 @@
 			break;
 
 		case "EmailCheck":
-			$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
+			$email = filter_input(INPUT_GET, "email", FILTER_SANITIZE_STRING);
 			if ( empty($email) || ! filter_var($email, FILTER_VALIDATE_EMAIL)){
 				echo 'EmailProblem';
 			}
@@ -65,13 +63,13 @@
 			break;	
 
 		case "SubmitCheck":
-			$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING);
-			$address = filter_input(INPUT_POST, "address", FILTER_SANITIZE_STRING);
-			$city = filter_input(INPUT_POST, "city", FILTER_SANITIZE_STRING);
-			$zip = filter_input(INPUT_POST, "zip", FILTER_SANITIZE_STRING);
-			$phone = filter_input(INPUT_POST, "phone", FILTER_SANITIZE_STRING);
-			$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_STRING);
-			$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING);
+			$name = filter_input(INPUT_GET, "name", FILTER_SANITIZE_STRING);
+			$address = filter_input(INPUT_GET, "address", FILTER_SANITIZE_STRING);
+			$city = filter_input(INPUT_GET, "city", FILTER_SANITIZE_STRING);
+			$zip = filter_input(INPUT_GET, "zip", FILTER_SANITIZE_STRING);
+			$phone = filter_input(INPUT_GET, "phone", FILTER_SANITIZE_STRING);
+			$email = filter_input(INPUT_GET, "email", FILTER_SANITIZE_STRING);
+			$message = filter_input(INPUT_GET, "message", FILTER_SANITIZE_STRING);
 
 			if ( empty($name) || ! (preg_match("/^[A-z\s]+$/", $name))){
 				echo 'Problem';
