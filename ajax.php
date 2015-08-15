@@ -42,7 +42,7 @@
 
 		case "PhoneCheck":
 			$phone = filter_input(INPUT_GET, "phone", FILTER_SANITIZE_STRING);
-			if ( empty($phone) || ! (preg_match("/^[0-9]{10}$/", $phone))){
+			if ( empty($phone) || ! (preg_match('/^\(\d{3}\) \d{3}-\d{4}$/', $phone))){
 				echo 'PhoneProblem';
 			}
 			else{
@@ -71,27 +71,27 @@
 			$email = filter_input(INPUT_GET, "email", FILTER_SANITIZE_STRING);
 			$message = filter_input(INPUT_GET, "message", FILTER_SANITIZE_STRING);
 
-			if ( empty($name) || ! (preg_match("/^[A-z\s]+$/", $name))){
+			if ( ! (preg_match("/^[A-z\s]+$/", $name))){
 				echo 'Problem';
 			}
 
-			else if ( empty($city) || ! (preg_match("/^[A-z\s]+$/", $city))){
+			else if ( ! (preg_match("/^[A-z\s]+$/", $city))){
 				echo 'Problem';
 			}
 
-			else if ( empty($zip) || ! (preg_match("/^[0-9]{5}$/", $zip))){
+			else if ( ! (preg_match("/^[0-9]{5}$/", $zip))){
 				echo 'Problem';
 			}
 
-			else if ( empty($phone) || ! (preg_match("/^[0-9]{10}$/", $phone))){
+			else if ( ! (preg_match('/^\(\d{3}\) \d{3}-\d{4}$/', $phone))){
 				echo 'Problem';
 			}
 
-			else if (empty($email) || ! filter_var($email, FILTER_VALIDATE_EMAIL)){
+			else if (! filter_var($email, FILTER_VALIDATE_EMAIL)){
 				echo 'Problem';
 			}
 
-			else if (empty($message) || strlen($message) > 250){
+			else if (strlen($message) > 250){
 				echo 'Problem';
 			}
 

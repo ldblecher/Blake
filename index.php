@@ -90,7 +90,7 @@
 				<div id="zip-msg" class="error"></div>
 			</div>
 			<div class="contactdiv">
-				<input type="text" tabindex="3" name="number" class="inputs" id="number" placeholder="Phone Number*" maxlength="10"><br>
+				<input type="text" name="number" class="inputs" id="number" placeholder="Phone Number*" maxlength="10"><br>
 				<div id="phone-msg" class="error"></div>
 				<input type="email" name="email" class="inputs" id="email" placeholder="Email*" maxlength="100"><br>
 				<div id="email-msg" class="error"></div>

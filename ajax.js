@@ -167,7 +167,7 @@ $(document).ready(function() {
 		});
 	});
 
-	$(document).on("keyup", "#name, #address, #city. #zip. #number, #email, #message, #submit", function(){
+	$(document).on("keyup", "#name, #address, #city, #zip, #number, #email, #message, #submit", function(){
 		var name = $("#name").val();
 		var address = $("#address").val();
 		var city = $("#city").val();
@@ -178,9 +178,9 @@ $(document).ready(function() {
 
 		if(name && city && zip && number && email && message){
 
-			var contactInfo = {requestType: "SubmitCheck", name: name, address: address, city: city, zip: zip, number: number, email: email, message: message};
+			var contactInfo = {requestType: 'SubmitCheck', name: name, address: address, city: city, zip: zip, phone: phone, email: email, message: message};
 
-			request = $.ajax({
+			requestSubmit = $.ajax({
 				url: 'ajax.php',
 				method: 'GET',
 				data: contactInfo,
@@ -191,6 +191,7 @@ $(document).ready(function() {
 			});
 
 			requestSubmit.success( function(data){ 
+				console.log(data);
 				if (data === 'Problem'){
 					$("#submit").attr("disabled", "disabled");
 				}
@@ -198,6 +199,9 @@ $(document).ready(function() {
 					$("#submit").removeAttr("disabled");
 				}
 			});
+		}
+		else{
+			$("#submit").attr("disabled", "disabled");
 		}
 	});
 
