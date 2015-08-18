@@ -14,7 +14,7 @@
 			$address = 'Not provided';
 		}
 
-		$to = "lblecher@churchillschool.com";
+		$to = "blakewsr@verizon.net";
 
 		$subject = "Website Contact from ".$name;
 
