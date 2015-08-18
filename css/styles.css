@@ -462,6 +462,33 @@ td{
 	transition: all .5s;
 }
 
+#badges{
+	height: 56px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#badges div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#badges a{
+	margin-left: 6px;
+	margin-right: 6px;
+	text-decoration: none;
+}
+
+#angies{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.badge-logos{
+	max-width: 80%;
+	max-height: 80%;
+}
+
 #contactus{
 	text-align: center;
 	font-family: 'Lato', sans-serif;
@@ -746,7 +773,33 @@ td{
 	width: 70%;
 }
 
+/*------CONTACT PAGE------*/
 
+.contacttext{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+#contacthead{
+	font-style: italic;
+	font-weight: bold;
+	font-size: 32px;
+	font-family: 'Lato', sans-serif;
+	line-height: 30px;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+#contactnumbers{
+	line-height: 60px;
+	font-size: 22px;
+	font-style: normal;
+}
 
 
 

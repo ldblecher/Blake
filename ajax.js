@@ -100,7 +100,6 @@ $(document).ready(function() {
 		}
 
 		var phone = $("#number").val();
-		console.log(phone);
 
 		var phoneInfo = {requestType: 'PhoneCheck', phone: phone};
 
@@ -191,7 +190,6 @@ $(document).ready(function() {
 			});
 
 			requestSubmit.success( function(data){ 
-				console.log(data);
 				if (data === 'Problem'){
 					$("#submit").attr("disabled", "disabled");
 				}
@@ -203,6 +201,40 @@ $(document).ready(function() {
 		else{
 			$("#submit").attr("disabled", "disabled");
 		}
+	});
+
+	$('form').submit(function(event){
+		var name = $("#name").val();
+		var address = $("#address").val();
+		var city = $("#city").val();
+		var zip = $("#zip").val();
+		var phone = $("#number").val();
+		var email = $("#email").val();
+		var message = $("#message").val();
+
+		var contactInfo = {name: name, address: address, city: city, zip: zip, phone: phone,email: email, message: message};
+
+
+		$.ajax({
+			type: 'POST',
+			url: 'mail.php',
+			data: contactInfo,
+			dataType: 'text',
+			error: function(error) {
+				console.log(error);
+			}
+		})
+
+		.success(function(data){
+			if (data === 'Sent'){
+				$('#submit-msg').text('Sent Successfully!');
+			}
+			else{
+				$('#submit-msg').text('Problem Sending');
+			}
+		})
+
+		event.preventDefault();
 	});
 
 

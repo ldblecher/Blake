@@ -29,8 +29,8 @@
 						<li class="subdrop"><a class="shadow" href="soffit.php">SOFFIT &amp; FASCIA</a></li>
 						<li class="subdrop"><a class="shadow" href="awnings.php">AWNINGS</a></li>
 						<li class="subdrop"><a class="shadow" href="doors.php">DOORS</a></li>
-						<li class="subdrop" id="bottom"><a class="shadow" href="remodeling.php">REMODELING</a></li>
-						<li class="subdrop"><a class="shadow" href="light.php">LIGHT CONSTRUCTION</a></li>
+						<li class="subdrop"><a class="shadow" href="remodeling.php">REMODELING</a></li>
+						<li class="subdrop" id="bottom"><a class="shadow" href="light.php">LIGHT CONSTRUCTION</a></li>
 					</ul>
 				</li>
 				<li class="line"><a class="shadow" href="testimonials.php">TESTIMONIALS</a></li>
@@ -45,7 +45,7 @@
 	<div id="maininner">
 		<div id="frontblurb">
 			<h2 id="proudly">Proudly serving Queens County and Nassau County for over 35 years</h2>
-			<p class="blurbtext">With over 35 years of experience, you can trust in the quality and craftsmanship of Blake Windows, Siding & Roofing. Whether it is for windows, siding, roofing, or any other home improvement, we start by listening to what you want. We always cater our service to you and your specific needs.</p>
+			<p class="blurbtext">With over 35 years of experience, you can trust in the quality and craftsmanship of Blake Windows, Siding &amp; Roofing. Whether it is for windows, siding, roofing, or any other home improvement, we start by listening to what you want. We always cater our service to you and your specific needs.</p>
 		</div>
 		<hr width="50%">
 		<div id="serviceslist">
@@ -79,7 +79,7 @@
 		<h1 id="contactus">Contact Us</h1>
 		<p id="indicates">* Indicates required field</p>
 
-		<form class="estimate" action="" method="post">
+		<form class="estimate" action="mail.php" method="POST">
 			<div class="contactdiv">
 				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"maxlength="100"><br>
 				<div id="name-msg" class="error"></div>
@@ -98,10 +98,37 @@
 				<div id="message-msg" class="error"></div>
 			</div><br><br>
 			<input type="submit" id="submit" name="submit" disabled>
+			<div id="submit-msg"></div>
 		</form>
 	</div>
 	<footer>
 		<img id="footerlogo" src="images/logo.png"><br>
+		<div id="badges">
+			<a href="http://www.bbb.org/new-york-city/business-reviews/home-improvements/blake-windows-siding-roofing-in-new-hyde-park-ny-2634" target="_blank">
+				<img title="BBB Badge" alt="BBB Badge" class="badge-logos" src="images/logos/bbb.png">
+			</a>
+    		<a href="http://www.gaf.com/Video_Library/0_otwo3min?CBViewer=3200" target="_blank">
+            	<img title="GAF" alt="GAF" class="badge-logos" src="images/logos/gaf.jpg">
+        	</a>
+        	<a href="http://www.gaf.com/Roofing/Contractors/Reviews/Blake-Windows%2C-Siding-And-Roofing-1002509-RES?CBViewer=3200" target="_blank">
+                <img title="GAF Master Elite" alt="GAF Master Elite" class="badge-logos" src="images/logos/master-elite.png">
+            </a>
+            <a href="https://www.energystar.gov/campaign/home?s=mega" target="_blank">
+                <img title="Energy Star Badge" alt="Energy Star Badge" class="badge-logos"src="images/logos/energystar.png">
+            </a>
+            <a href="http://www.alside.com/about/history/" target="_blank">
+                <img title="Alside Gold Star Badge" class="talllogos" alt="Alside Gold Star Badge" src="images/logos/alside.jpg">
+            </a>
+            <a href="http://business.nhpchamber.org/list/member/blake-windows-siding-roofing-23" target="_blank">
+                <img src="images/logos/nhpchamber.jpg" alt="New Hyde Park Chamber of Commerce" title="New Hyde Park Badge" class="badge-logos">
+            </a>
+            <a href="http://www.pella.com/photo-gallery/" target="_blank">
+                <img src="images/logos/pella.jpg" alt="Pella Badge" title="Pella Badge" class="talllogos">
+            </a>
+            <a href="http://www.angieslist.com/companylist/us/ny/new-hyde-park/blake-windows%2C-siding-and-roofing-reviews-226343.htm" target="_blank">
+                <img src="images/logos/angies.png" alt="Angie's List Badge" title="Angie's List Badge" id="angies">
+            </a>
+		</div>
 		<table>
 			<tr>
 				<td>
