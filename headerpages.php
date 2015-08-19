@@ -33,13 +33,14 @@
 		<div id="navbar">
 			<div id="numbers">1-877-BLAKE-OK / 516-488-4858 / 718-766-8600</div><br>
 			<ul class="list">
+				<li class="line"><a class="shadow" href="index.php">HOME</a></li>
 				<li class="line"><a class="shadow" href="about.php">ABOUT</a></li>
 				<li class="line"><a class="shadow" href="roofing.php">ROOFING</a></li>
 				<li class="line"><a class="shadow" href="siding.php">SIDING</a></li>
 				<li class="line"><a class="shadow" href="windows.php">WINDOWS</a></li>
-				<li class="line"><a class="shadow" href="gutters.php">GUTTERS</a></li>
 				<li class="line" id="dropdown">OTHER SERVICES
 					<ul class="smaller" id="subul">
+						<li class="subdrop"><a class="shadow" href="gutters.php">GUTTERS &amp; LEADERS</a></li>
 						<li class="subdrop"><a class="shadow" href="soffit.php">SOFFIT &amp; FASCIA</a></li>
 						<li class="subdrop"><a class="shadow" href="awnings.php">AWNINGS</a></li>
 						<li class="subdrop"><a class="shadow" href="doors.php">DOORS</a></li>

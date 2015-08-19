@@ -19,13 +19,14 @@
 		<div id="navbar">
 			<div id="numbers">1-877-BLAKE-OK / 516-488-4858 / 718-766-8600</div><br>
 			<ul class="list">
+				<li class="line"><a class="shadow" href="index.php">HOME</a></li>
 				<li class="line"><a class="shadow" href="about.php">ABOUT</a></li>
 				<li class="line"><a class="shadow" href="roofing.php">ROOFING</a></li>
 				<li class="line"><a class="shadow" href="siding.php">SIDING</a></li>
 				<li class="line"><a class="shadow" href="windows.php">WINDOWS</a></li>
-				<li class="line"><a class="shadow" href="gutters.php">GUTTERS</a></li>
 				<li class="line" id="dropdown" >OTHER SERVICES
 					<ul id="subul">
+						<li class="subdrop"><a class="shadow" href="gutters.php">GUTTERS &amp; LEADERS</a></li>
 						<li class="subdrop"><a class="shadow" href="soffit.php">SOFFIT &amp; FASCIA</a></li>
 						<li class="subdrop"><a class="shadow" href="awnings.php">AWNINGS</a></li>
 						<li class="subdrop"><a class="shadow" href="doors.php">DOORS</a></li>
@@ -76,7 +77,7 @@
 		</div>
 
 		<hr width="50%">
-		<h1 id="contactus">Contact Us</h1>
+		<h2 id="contactus">Contact Us</h2>
 		<p id="indicates">* Indicates required field</p>
 
 		<form class="estimate" action="mail.php" method="POST">
@@ -100,6 +101,19 @@
 			<input type="submit" id="submit" name="submit" disabled>
 			<div id="submit-msg"></div>
 		</form>
+		<hr width="50%">
+		<img id="thumbsmile" src="images/thumbsup/thumbssmile.png">
+		<h2 id="thumbstitle">Ask How to Join Our Thumbs Up Club!</h2>
+		<div id="scroller">
+			<div class="innerScrollArea">
+				<ul>
+					<li><img src="images/thumbsup/thumbsup_elmont.jpeg"/></li>
+					<li><img src="images/thumbsup/thumbsup_flushing.jpg"/></li>
+					<li><img src="images/thumbsup/thumbsup_hollis.jpg"/></li>
+					<li><img src="images/thumbsup/thumbsup_queensvillage.jpg"/></li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<footer>
 		<img id="footerlogo" src="images/logo.png"><br>

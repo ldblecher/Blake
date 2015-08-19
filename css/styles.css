@@ -578,6 +578,60 @@ td{
 	opacity: .5;
 }
 
+#scroller{
+	width: 80%;
+	height: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#scroller ul>li { 
+	padding: 0 10px; 
+} 
+
+.innerScrollArea{
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#scroller ul{
+	padding: 0;
+	margin: 0;
+	position: relative;
+}
+
+#scroller li{
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	list-style-type: none;
+}
+
+.innerScrollArea img{
+	height: 300px;
+}
+
+#thumbstitle{
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height: 40px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+#thumbsmile{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	margin-top: 30px;
+}
+
 /*------SIDING PAGE------*/
 #resttopbar{
 	padding-top: 10px;
