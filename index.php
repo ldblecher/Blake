@@ -99,12 +99,12 @@
 				<div id="message-msg" class="error"></div>
 			</div><br><br>
 			<input type="submit" id="submit" name="submit" disabled>
-			<div id="submit-msg"></div>
 		</form>
+		<div id="submit-msg"></div>
 		<hr width="50%">
 		<img id="thumbsmile" src="images/thumbsup/thumbssmile.png">
 		<h2 id="thumbstitle">Ask How to Join Our Thumbs Up Club!</h2>
-		<div id="scroller">
+		<!-- <div id="scroller">
 			<div class="innerScrollArea">
 				<ul>
 					<li><img src="images/thumbsup/thumbsup_elmont.jpeg"/></li>
@@ -113,7 +113,7 @@
 					<li><img src="images/thumbsup/thumbsup_queensvillage.jpg"/></li>
 				</ul>
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<footer>
 		<img id="footerlogo" src="images/logo.png"><br>

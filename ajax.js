@@ -228,6 +228,9 @@ $(document).ready(function() {
 		.success(function(data){
 			if (data === 'Sent'){
 				$('#submit-msg').text('Sent Successfully!');
+				$(".estimate").fadeOut(1000, function(){
+					$('#submit-msg').fadeIn(1500);
+				});
 			}
 			else{
 				$('#submit-msg').text('Problem Sending');

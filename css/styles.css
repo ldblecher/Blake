@@ -578,6 +578,11 @@ td{
 	opacity: .5;
 }
 
+#submit-msg{
+	text-align: center;
+	display: none;
+}
+
 #scroller{
 	width: 80%;
 	height: 400px;

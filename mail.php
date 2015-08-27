@@ -14,7 +14,13 @@
 			$address = 'Not provided';
 		}
 
-		$to = "blakewsr@verizon.net";
+		//Enter in csv file
+		$contact = $name.",".$address.",".$city.",".$zip.",".$phone.",".$email."\n";
+		$file = fopen("contactlist.csv","a");
+		fputcsv($file,explode(",",$contact));
+		fclose($file);
+
+		$to = "lbbaseball218@aim.com";
 
 		$subject = "Website Contact from ".$name;
 
