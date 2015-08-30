@@ -502,7 +502,7 @@ td{
 #indicates{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	margin-top: 10px;
 	text-align: center;
 }
@@ -538,7 +538,7 @@ td{
 	margin-bottom: 10px;
 }
 
-#message{
+.message{
 	width: 277px;
 	padding-left: 10px;
 	padding-right: 10px; 
@@ -551,7 +551,7 @@ td{
 	vertical-align: top;
 }
 
-#submit{
+.submit{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	background-color: white;
@@ -578,9 +578,17 @@ td{
 	opacity: .5;
 }
 
-#submit-msg{
+.submit-msg{
 	text-align: center;
-	display: none;
+	color: #66CD00;
+	font-size: 25px;
+	margin-bottom: 20px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 500;
+}
+
+#sidemsg{
+	font-size: 15px;
 }
 
 #scroller{
@@ -746,7 +754,7 @@ td{
 	padding-right: 10px; 
 }
 
-#sidemessage{
+.sidemessage{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
@@ -760,7 +768,7 @@ td{
 	-webkit-appearance: textfield;
 }
 
-#sidesub{
+.sidesub{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
 	background-color: white;
@@ -771,6 +779,18 @@ td{
 	padding: 5px;
 	padding-left: 8px;
 	padding-right: 8px;
+	font-size: 14px;
+	-webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.sideerror{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: red;
 	font-size: 14px;
 }
 

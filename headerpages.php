@@ -9,6 +9,8 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
 	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="ajax.js"></script>
 
 	<script id="img-wrapper-tmpl" type="text/x-jquery-tmpl">	
 		<div class="rg-image-wrapper">

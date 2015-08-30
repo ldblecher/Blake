@@ -10,8 +10,9 @@
 	<div class="innercontent">
 		<p id="contacthead">Get in Touch with Blake Windows, Siding, and Roofing!<br>
 		<span id="contactnumbers">1-877-BLAKE-OK / 516-488-4858 / 718-766-8600</span></p>
-		<p class="contacttext">We appreciate the time you’ve taken looking around our website and reading a bit about Blake Windows, Siding &amp; Roofing we promise that we’ll take the time to look at your home and listen to your concerns regarding your home improvement project. We’d love to add you to our list of satisfied home owners. You can fill out the form below or give us a call and we’ll set up a time to meet with you at your home or business for a free no obligation quote.</p>
+		<p class="contacttext">We appreciate the time you've taken looking around our website and reading a bit about Blake Windows, Siding &amp; Roofing we promise that we'll take the time to look at your home and listen to your concerns regarding your home improvement project. We'd love to add you to our list of satisfied home owners. You can fill out the form below or give us a call and we'll set up a time to meet with you at your home or business for a free no obligation quote.</p>
 
+		<div id="submit-msg"></div>
 		<form class="estimate" action="mail.php" method="POST">
 			<div class="contactdiv">
 				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"maxlength="100"><br>

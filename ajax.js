@@ -115,7 +115,7 @@ $(document).ready(function() {
 
 		requestPhone.success( function(data){ 
 			if (data === 'PhoneProblem'){
-				$("#phone-msg").text("Please enter a valid 10 digit phone number");
+				$("#phone-msg").text("Please enter a valid phone number");
 			}
 			else{
 				$("#phone-msg").text("");
@@ -227,13 +227,18 @@ $(document).ready(function() {
 
 		.success(function(data){
 			if (data === 'Sent'){
-				$('#submit-msg').text('Sent Successfully!');
-				$(".estimate").fadeOut(1000, function(){
-					$('#submit-msg').fadeIn(1500);
-				});
+				$('.submit-msg').text('Sent Successfully!');
+				$("#name").val("");
+				$("#address").val("");
+				$("#city").val("");
+				$("#zip").val("");
+				$("#number").val("");
+				$("#email").val("");
+				$("#message").val("");
+				$("#submit").attr("disabled", "disabled");
 			}
 			else{
-				$('#submit-msg').text('Problem Sending');
+				$('.submit-msg').text('Problem Sending');
 			}
 		})
 

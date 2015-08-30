@@ -1,20 +1,9 @@
 Name,Address,City,Zip Code,Phone Number,Email
 
-Lee,test,test,11111,"(111) 111-1111","bob@gmail.com
+
+t,"Not provided",sfsd,11111,"(111) 111-1111","ldblecher@gmail.com
 "
-Lee,test,test,11111,"(111) 111-1111","bob@gmail.com
+t,"Not provided",t,11111,"(111) 111-1111","ldblecher@gmail.com
 "
-test,test,teset,11111,"(111) 111-1111","bob@gmail.com
-"
-test,"Not provided",test,11111,"(111) 111-1111","bob@gmail.com
-"
-test,"Not provided",test,11111,"(111) 111-1111","bob@gmail.com
-"
-test,"Not provided",test,11111,"(111) 111-1111","bob@gmail.com
-"
-test,"Not provided",test,11111,"(111) 111-1111","ldblecher@gmail.com
-"
-test,"Not provided",n,11111,"(111) 111-1111","ldblecher@gmail.com
-"
-test,"Not provided",test,11111,"(111) 111-1111","bob@gmail.com
+t,"Not provided",t,11111,"(111) 111-1111","ldblecher@gmail.com
 "
