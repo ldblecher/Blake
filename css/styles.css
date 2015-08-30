@@ -225,7 +225,7 @@ body, html {
 .servicediv{
 	display: inline-block;
 	padding: 30px;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .servpic{
@@ -241,6 +241,19 @@ body, html {
     background-size: cover;
 }
 
+.imgtext{
+	width: 350px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+.imgtext li{
+	padding-bottom: 5px;
+}
+
 .apic{
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
@@ -254,12 +267,18 @@ body, html {
 		width: 300px;
 		height: 250px;
 	}
+	.imgtext{
+		width: 300px;
+	}
 }
 
 @media screen and (max-width: 1110px){
 	.img{
 		width: 275px;
 		height: 225px;
+	}
+	.imgtext{
+		width: 275px;
 	}
 
 	.apic{
@@ -272,6 +291,9 @@ body, html {
 		width: 250px;
 		height: 200px;
 	}
+	.imgtext{
+		width: 250px;
+	}
 
 	.apic{
 		font-size: 25px;
@@ -283,6 +305,9 @@ body, html {
 		width: 300px;
 		height: 250px;
 	}
+	.imgtext{
+		width: 300px;
+	}
 
 	.apic{
 		font-size: 30px;
@@ -293,6 +318,9 @@ body, html {
 	.img{
 		width: 250px;
 		height: 200px;
+	}
+	.imgtext{
+		width: 250px;
 	}
 
 	.apic{

@@ -53,26 +53,49 @@
 			<div class="servicediv">
 				<a href="roofing.php" class="apic"><p>Roofing</p></a>
 				<a href="roofing.php"><div class="img" style="background-image:url('images/roof1.jpg')"></div></a>
+				<ul class="imgtext">
+					<li>As a GAF Master Elite Certified Residential Roofing Contractor (since 2001) you receive top quality roofing materials, a professional roofing system, the best transferrable warranties and peace of mind.</li>
+				</ul>
 			</div>
 			<div class="servicediv">
 				<a href="siding.php" class="apic"><p>Siding</p></a>
 				<a href="siding.php"><div class="img" style="background-image:url('images/siding1.jpg')"></div></a>
+				<ul class="imgtext">
+					<li>Vinyl siding on your home can be transformative.</li>
+					<li>With the right colors, styles, trim, textures and accessories; your home can go from ordinary to beautiful, from liking it to loving it.</li>
+				</ul>
 			</div>
 			<div class="servicediv">
 				<a href="windows.php" class="apic"><p>Windows</p></a>
 				<a href="windows.php"><div class="img" style="background-image:url('images/windows1.jpg')"></div></a>
+				<ul class="imgtext"> 
+					<li>New replacement windows enhance the appearance of your home inside and out and increase energy savings year round.</li>
+					<li>Bays, bows, double hung, casement, awning, sliders; you have many styles to choose from.</li>
+				</ul>
 			</div>
 			<div class="servicediv">
 				<a href="gutters.php" class="apic"><p>Gutters and Leaders</p></a>
 				<a href="gutters.php"><div class="img" style="background-image:url('images/guttersleaders.jpg')"></div></a>
+				<ul class="imgtext"> 
+					<li>Custom-made seamless aluminum gutters &amp; leaders keeps water away from your home's foundation and protects your home.</li>
+					<li>With 15 colors to choose from, you can color coordinate with your roof and siding.
+				</ul>
 			</div>
 			<div class="servicediv">
 				<a href="soffit.php" class="apic"><p>Soffit and Fascia</p></a>
 				<a href="soffit.php"><div class="img" style="background-image:url('images/soffitfascia.jpg')"></div></a>
+				<ul class="imgtext">
+					<li>Soffit &amp; fascia or trim work</li>
+				</ul>
 			</div>
 			<div class="servicediv">
-				<a href="doors.php" class="apic"><p>Doors</p></a>
+				<a href="doors.php" class="apic"><p>Awnings</p></a>
 				<a href="doors.php"><div class="img" style="background-image:url('images/roof1.jpg')"></div></a>
+				<ul class="imgtext"> 
+					<li>Awnings extend the living space of the outside of your home.</li>
+					<li>Transform your deck or patio into outside living space.</li>
+					<li>Door hoods protect from rain when carrying packages or opening your door.</li>
+				</ul>
 			</div>
 		</div>
 
