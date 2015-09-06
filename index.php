@@ -201,7 +201,11 @@
 			<a href="siding.php">Siding</a> | 
 			<a href="windows.php">Windows</a> | 
 			<a href="gutters.php">Gutters</a> | 
-			<a href="other.php">Other Services</a> | 
+			<a href="soffit.php">Soffit &amp; Fascia</a><br>
+			<a href="awnings.php">Awnings</a> | 
+			<a href="doors.php">Doors</a> | 
+			<a href="remodeling.php">Remodeling</a> | 
+			<a href="light.php">Light Construction</a> | 
 			<a href="testimonials.php">Testimonials</a> | 
 			<a href="contact.php">Contact</a>
 		</p>

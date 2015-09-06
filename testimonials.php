@@ -5,10 +5,10 @@
 
 	<div class="mainpics" id="mainsidingpic">
 		<!-- <img id="gafroof" src="images/gaf-roof-new.jpg"> -->
-		<h1 id="restmaintext">CONTACT</h1>
+		<h1 id="restmaintext">TESTIMONIALS</h1>
 	</div>
 	<div class="innercontent">
-		<p id="contacthead">Get in Touch with Blake Windows, Siding, and Roofing!<br>
+		<p id="contacthead">We Want to Hear What You Have to Say!<br>
 		<span id="contactnumbers">1-877-BLAKE-OK / 516-488-4858 / 718-766-8600</span></p>
 		<p class="contacttext">We appreciate the time you've taken looking around our website and reading a bit about Blake Windows, Siding &amp; Roofing we promise that we'll take the time to look at your home and listen to your concerns regarding your home improvement project. We'd love to add you to our list of satisfied home owners. You can fill out the form below or give us a call and we'll set up a time to meet with you at your home or business for a free no obligation quote.</p>
 
@@ -28,10 +28,10 @@
 				<div id="phone-msg" class="error"></div>
 				<input type="email" name="email" class="inputs" id="email" placeholder="Email*" maxlength="100"><br>
 				<div id="email-msg" class="error"></div>
-				<textarea id="message" class="message" placeholder="Message*" maxlength="250"></textarea>
+				<textarea id="message" placeholder="Message*" maxlength="250"></textarea>
 				<div id="message-msg" class="error"></div>
 			</div><br><br>
-			<input type="submit" class="submit" id="submit" name="submit" disabled>
+			<input type="submit" id="submit" name="submit" disabled>
 			<div id="submit-msg"></div>
 		</form>
 	</div>

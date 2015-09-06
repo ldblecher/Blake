@@ -90,8 +90,8 @@ body, html {
 }
 
 #bottom{
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
 }
 
 #subul.smaller{
