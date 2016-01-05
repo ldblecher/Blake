@@ -72,7 +72,7 @@
 					<li>New replacement windows enhance the appearance of your home inside and out and increase energy savings year round.</li>
 					<li>Bays, bows, double hung, casement, awning, sliders; you have many styles to choose from.</li>
 				</ul>
-			</div>
+			</div> 
 		</div>
 
 		<hr width="50%">
