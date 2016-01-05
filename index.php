@@ -11,7 +11,7 @@
 	<script src="js/classie.js"></script>
 	<script src="js/smaller.js"></script>
 	<script src="ajax.js"></script>
-</head>
+</head> 
 
 <body>
 	<div id="topbar">
