@@ -73,30 +73,6 @@
 					<li>Bays, bows, double hung, casement, awning, sliders; you have many styles to choose from.</li>
 				</ul>
 			</div>
-			<div class="servicediv">
-				<a href="gutters.php" class="apic"><p>Gutters and Leaders</p></a>
-				<a href="gutters.php"><div class="img" style="background-image:url('images/guttersleaders.jpg')"></div></a>
-				<ul class="imgtext"> 
-					<li>Custom-made seamless aluminum gutters &amp; leaders keeps water away from your home's foundation and protects your home.</li>
-					<li>With 15 colors to choose from, you can color coordinate with your roof and siding.
-				</ul>
-			</div>
-			<div class="servicediv">
-				<a href="soffit.php" class="apic"><p>Soffit and Fascia</p></a>
-				<a href="soffit.php"><div class="img" style="background-image:url('images/soffitfascia.jpg')"></div></a>
-				<ul class="imgtext">
-					<li>Soffit &amp; fascia or trim work</li>
-				</ul>
-			</div>
-			<div class="servicediv">
-				<a href="doors.php" class="apic"><p>Awnings</p></a>
-				<a href="doors.php"><div class="img" style="background-image:url('images/roof1.jpg')"></div></a>
-				<ul class="imgtext"> 
-					<li>Awnings extend the living space of the outside of your home.</li>
-					<li>Transform your deck or patio into outside living space.</li>
-					<li>Door hoods protect from rain when carrying packages or opening your door.</li>
-				</ul>
-			</div>
 		</div>
 
 		<hr width="50%">
