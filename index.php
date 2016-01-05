@@ -79,7 +79,7 @@
 		<h2 id="contactus">Contact Us</h2>
 		<p id="indicates">* Indicates required field</p>
 		<div class="submit-msg"></div>
-		<form class="estimate" action="mail.php" method="POST">
+		<form class="estimate" action="mail.php" method="POST"> 
 			<div class="contactdiv">
 				<input type="text" name="name" class="inputs" id="name" placeholder="Name*"maxlength="100"><br>
 				<div id="name-msg" class="error"></div>
